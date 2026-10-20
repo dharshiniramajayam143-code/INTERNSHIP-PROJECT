@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Learn JavaScript</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background: #222;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        nav {
+            background: #1e99f7;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #222;
+            text-decoration: none;
+            margin: 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 30px auto;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            color: #333;
+        }
+
+        .example {
+            background: #222;
+            color: #f7df1e;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: monospace;
+        }
+
+        button {
+            background: #f7df1e;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background: #e6ce00;
+        }
+
+        #message {
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>⚡ Learn JavaScript</h1>
+        <p>Make your websites interactive and dynamic</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#example">Example</a>
+    </nav>
+
+    <div class="container">
+
+        <section class="card" id="about">
+            <h2>What is JavaScript?</h2>
+            <p>
+                JavaScript is a programming language used to make web pages
+                interactive and dynamic.
+            </p>
+
+            <p>
+                HTML creates the structure, CSS creates the design,
+                and JavaScript adds functionality.
+            </p>
+        </section>
+
+        <section class="card" id="features">
+            <h2>Why Learn JavaScript?</h2>
+
+            <ul>
+                <li>Creates interactive websites</li>
+                <li>Handles button clicks</li>
+                <li>Changes webpage content</li>
+                <li>Creates animations</li>
+                <li>Works with HTML and CSS</li>
+            </ul>
+        </section>
+
+        <section class="card" id="example">
+            <h2>Simple JavaScript Example</h2>
+
+            <div class="example">
+                let name = "Student";<br>
+                alert("Hello " + name);
+            </div>
+
+            <br>
+
+            <button onclick="showMessage()">
+                Click Me
+            </button>
+
+            <p id="message"></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Learn JavaScript | Created for Beginners</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "🎉 Hello! You just used JavaScript!";
+        }
+    </script>
+
+</body>
+</html>
+
