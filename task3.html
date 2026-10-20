@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StyleVibe - Fashion</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f8f3f5;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        header {
+            background: #111;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #e8a0b5;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px 8%;
+            background: linear-gradient(
+                120deg,
+                #f7d9e2,
+                #f9eef1
+            );
+        }
+
+        .hero-text {
+            width: 50%;
+        }
+
+        .hero-text h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .hero-text h1 span {
+            color: #c45b7c;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #111;
+            color: white;
+            padding: 14px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #c45b7c;
+        }
+
+        /* Fashion Image */
+        .hero-image {
+            width: 42%;
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 90%;
+            max-width: 450px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        /* Collections */
+        .collections {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .collections h2 {
+            font-size: 35px;
+            margin-bottom: 40px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 280px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        .card-content p {
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        /* About Section */
+        .about {
+            background: #111;
+            color: white;
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.8;
+            color: #ddd;
+        }
+
+        /* Footer */
+        footer {
+            background: #000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                width: 100%;
+            }
+
+            .hero-text h1 {
+                font-size: 40px;
+            }
+
+            .hero-image {
+                width: 100%;
+                margin-top: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">STYLEVIBE</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <h1>
+                Discover Your
+                <span>Style</span>
+            </h1>
+
+            <p>
+                Fashion is more than clothing.
+                It is a way to express your personality,
+                confidence and creativity.
+            </p>
+
+            <a href="#collection" class="btn">
+                Explore Collection
+            </a>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+                alt="Fashion"
+            >
+
+        </div>
+
+    </section>
+
+
+    <!-- Collection Section -->
+    <section class="collections" id="collection">
+
+        <h2>Our Collection</h2>
+
+        <div class="cards">
+
+            <!-- Card 1 -->
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=600&q=80"
+                    alt="Women's Fashion"
+                >
+
+                <div class="card-content">
+
+                    <h3>Elegant Wear</h3>
+
+                    <p>
+                        Simple and elegant outfits
+                        for every occasion.
+                    </p>
+
+                    <a href="#" class="btn">
+                        View More
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80"
+                    alt="Trendy Fashion"
+                >
+
+                <div class="card-content">
+
+                    <h3>Trendy Looks</h3>
+
+                    <p>
+                        Discover modern and
+                        stylish fashion ideas.
+                    </p>
+
+                    <a href="#" class="btn">
+                        View More
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=600&q=80"
+                    alt="Street Fashion"
+                >
+
+                <div class="card-content">
+
+                    <h3>Street Style</h3>
+
+                    <p>
+                        Comfortable looks with
+                        a fashionable touch.
+                    </p>
+
+                    <a href="#" class="btn">
+                        View More
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+
+        <h2>About StyleVibe</h2>
+
+        <p>
+            StyleVibe is a simple fashion website created
+            for people who love fashion and creativity.
+            Our goal is to inspire everyone to discover
+            their own unique style.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 StyleVibe | Fashion & Style
+        </p>
+
+    </footer>
+
+</body>
+</html>
