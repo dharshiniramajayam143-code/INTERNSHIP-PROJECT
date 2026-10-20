@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glass Container</title>
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        margin: 0;
+        background-color: rgb(43, 226, 186);
+        background-image:liner-gradient(315deg, rgb(43, 225, 186) 0%, rgb(57, 2, 184) 74%);
+        height: 100vh;
+     
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 400px;
+        height: 500px;
+
+        background-color: rgba(57, 2, 184, 0.71);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+
+        backdrop-filter: blur(10px);
+
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2),
+                    inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        hello
+    </div>
+
+</body>
+</html>
